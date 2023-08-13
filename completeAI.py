@@ -148,10 +148,10 @@ if __name__ == '__main__':
             speak(f"Sir, the time is {strTime}")
 
         elif 'open opera' in query:
-            codePath = r"C:\\Users\\GAURAV\\AppData\\Local\\Programs\\Opera\\launcher.exe"
+            codePath = r"*enter your path here*"
             os.startfile(codePath)
 
-        elif 'email to gaurav' in query:
+        elif 'email to shriram' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
@@ -200,7 +200,7 @@ if __name__ == '__main__':
             exit()
 
         elif "who made you" in query or "who created you" in query:
-            speak("I have been created by Gaurav.")
+            speak("I have been created by Shriram.")
 
         elif 'joke' in query:
             speak(pyjokes.get_joke())
@@ -226,11 +226,11 @@ if __name__ == '__main__':
             speak("If you talk then definitely your human.")
 
         elif "why you came to world" in query:
-            speak("Thanks to Gaurav. further It's a secret")
+            speak("Thanks to Shriram. further It's a secret")
 
         elif 'power point presentation' in query:
             speak("opening Power Point presentation")
-            power = r"C:\\Users\\GAURAV\\Desktop\\Minor Project\\Presentation\\Voice Assistant.pptx"
+            power = r"C*enter your path here*"
             os.startfile(power)
 
         elif 'is love' in query:
@@ -240,7 +240,7 @@ if __name__ == '__main__':
             speak("I am your virtual assistant created by Shriram")
 
         elif 'reason for you' in query:
-            speak("I was created as a Minor project by Baz ")
+            speak("I was created as a personal project by Shriram since he wanted to get a hands-on experience in building voice assistants")
 
         elif 'change background' in query:
             ctypes.windll.user32.SystemParametersInfoW(20,
@@ -285,7 +285,7 @@ if __name__ == '__main__':
             speak("Recycle Bin Recycled")
 
         elif "don't listen" in query or "stop listening" in query:
-            speak("for how much time you want to stop jarvis from listening commands")
+            speak("for how much time you want to stop hoffa from listening commands")
             a = int(takeCommand())
             time.sleep(a)
             print(a)
@@ -328,7 +328,7 @@ if __name__ == '__main__':
 
         elif "show note" in query:
             speak("Showing Notes")
-            file = open("jarvis.txt", "r")
+            file = open("hoffa.txt", "r")
             print(file.read())
             speak(file.read(6))
 
